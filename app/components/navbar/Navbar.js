@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../public/image1.jpg";
+import logo from "../../../public/logo.jpg";
 const Navbar = () => {
     return (
         <div className="navbar">

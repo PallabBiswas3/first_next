@@ -6,8 +6,13 @@ body {
 .navbar {
   background-color: #333;
   overflow: hidden;
-  position: fixed;
+  position: relative;
   width: 100%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
 }
 
 .navbar-brand {
@@ -37,6 +42,10 @@ body {
 
 .navbar-nav li a:hover {
   background-color: #555;
+}
+
+.home {
+  background-image: "../../../public/Stars.jpg";
 }
 
 .site-footer {
@@ -119,9 +128,7 @@ body {
   .site-footer [class^='col-'] {
     margin-bottom: 30px;
   }
-}
 
-@media (max-width: 767px) {
   .site-footer {
     padding-bottom: 0;
   }
