@@ -15,6 +15,28 @@ body {
   height: 100%;
 }
 
+.home {
+  position: relative;
+}
+
+.background-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-overlay h1 {
+  font-size: 48px;
+  margin: 0;
+}
 
 
 .title {
@@ -51,6 +73,7 @@ body {
 .navbar-nav li a:hover {
   background-color: #555;
 }
+
 
 .buttonContainer {
   display: flex;

@@ -1,15 +1,17 @@
 import Image from "next/image";
-import back_image from "/public/Stars.jpg";
+import background_image from "/public/Stars.jpg";
 import "./globals.css";
+
 const home = () => {
   return (
-    <div>
-      <div className="home">
-        <Image src={back_image} alt="logo" className="logo" width={1000}
-          height={600} />
+    <div className="home">
+      <div className="background-container">
+        <Image src={background_image} alt="background" className="background" />
+        <div className="text-overlay">
+          <h1>Hi Everyone</h1>
+        </div>
       </div>
       <div>
-
         <h1 className="title">Welcome to Space Blogs</h1>
         <div className="buttonContainer">
           <a href="#" className="btnBigRed">Extraterrestrial Life</a>
