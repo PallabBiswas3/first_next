@@ -15,6 +15,14 @@ body {
   height: 100%;
 }
 
+
+
+.title {
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
 .navbar-brand {
   float: left;
   display: block;
@@ -44,8 +52,65 @@ body {
   background-color: #555;
 }
 
-.home {
-  background-image: "../../../public/Stars.jpg";
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnBigRed {
+  background-color: green;
+  flex-wrap: wrap;
+  background-image:
+    linear-gradient(167deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(0, 0, 0, 0) 55%),
+    linear-gradient(top,
+      rgba(255, 255, 255, 0.15),
+      rgba(0, 0, 0, 0));
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px green inset,
+    0 0 0 2px green inset,
+    0 8px 0 0 green,
+    0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  display: inline-block;
+  font-family: "Lucida Grande", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  height: 61px;
+  letter-spacing: -1px;
+  line-height: 61px;
+  margin: 30px 0 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none !important;
+  top: 0;
+  width: 186px;
+  transition: 0.15s;
+  padding: 20px;
+}
+
+.btnBigRed:hover,
+.btnBigRed:focus {
+  background-color: #D13902;
+  box-shadow:
+    0 0 0 1px #C63702 inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 10px 0 0 #AD3002,
+    0 10px 0 1px rgba(0, 0, 0, 0.4),
+    0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  top: -2px;
+}
+
+.btnBigRed:active {
+  box-shadow:
+    0 0 0 1px #AD3002 inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.4);
+  transform: translateY(10px);
 }
 
 .site-footer {
