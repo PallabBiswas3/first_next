@@ -1,5 +1,6 @@
 import Image from "next/image";
 import background_image from "/public/Stars.jpg";
+import me from "/public/my.jpg";
 import "./globals.css";
 
 const home = () => {
@@ -8,7 +9,12 @@ const home = () => {
       <div className="background-container">
         <Image src={background_image} alt="background" className="background" />
         <div className="text-overlay">
-          <h1>Hi Everyone</h1>
+          <h1 className="text">Hi Everyone</h1>
+          <h3>I am PALLAB</h3>
+          <h3>Software Developer</h3>
+          <h3>Space Enthusiast</h3>
+          <button className="btn">Hire me</button>
+          <Image src={me} alt="me" className="me" />
         </div>
       </div>
       <div>
