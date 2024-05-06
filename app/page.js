@@ -15,8 +15,19 @@ const home = () => {
           <h3>I am PALLAB</h3>
           <h3>Software Developer</h3>
           <h3>Space Enthusiast</h3>
+
           <button className="btn">Hire me</button>
         </div>
+        <div className="text-overlay2">
+          <h1>
+            Explore More
+          </h1>
+          <p>
+            Unlock Your Potential and upgrade your skill with us.
+          </p>
+          <button class="custom-btn btn-7"><span>Read More</span></button>
+        </div>
+
       </div>
       <div>
         <h1 className="title">Welcome to Space Blogs</h1>
