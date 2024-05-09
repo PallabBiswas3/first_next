@@ -1,9 +1,22 @@
-import Image from "next/image";
-import background_image from "/public/Stars.jpg";
-import me from "/public/my.jpg";
-import "./globals.css";
+"use client"
 
-const home = () => {
+import Image from "next/image";
+import { useRouter } from 'next/navigation';
+import Link from "next/link";
+import background_image from "/public/Stars.jpg";
+import me from "/public/my.jpg"
+import "./globals.css";
+import React from "react";
+const Home = () => {
+  const handle1 = () => {
+    window.location.href = '/blogs/life';
+  };
+  const handle2 = () => {
+    window.location.href = '/blogs/space';
+  };
+  const handle3 = () => {
+    window.location.href = '/blogs/universe';
+  };
   return (
     <div className="home">
       <div className="background-container">
@@ -19,26 +32,21 @@ const home = () => {
           <button className="btn">Hire me</button>
         </div>
         <div className="text-overlay2">
-          <h1>
-            Explore More
-          </h1>
-          <p>
-            Unlock Your Potential and upgrade your skill with us.
-          </p>
-          <button class="custom-btn btn-7"><span>Read More</span></button>
+          <h1>Explore More</h1>
+          <p>Unlock Your Potential and upgrade your skill with us.</p>
+          <button className="custom-btn btn-7"><span>Read More</span></button>
         </div>
-
       </div>
       <div>
         <h1 className="title">Welcome to Space Blogs</h1>
         <div className="buttonContainer">
-          <a href="#" className="btnBigRed">Extraterrestrial Life</a>
-          <a href="#" className="btnBigRed">Space Travel</a>
-          <a href="#" className="btnBigRed">Our Universe</a>
+          <a href="#" className="btnBigRed" onClick={handle1}>Extraterrestrial Life</a>
+          <a href="#" className="btnBigRed" onClick={handle2}>Space Travel</a>
+          <a href="#" className="btnBigRed" onClick={handle3}>Our Universe</a>
         </div>
       </div>
     </div>
   );
 }
 
-export default home;
+export default Home;
