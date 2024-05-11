@@ -27,7 +27,7 @@ const BlogCard = () => {
                     <h2>Opening a door to the future</h2>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
                     <p className="read-more">
-                        <a href="#" className='custom-btn btn-10'>Read More</a>
+                        <a href="#">Read More</a>
                     </p>
                 </div>
             </div>
@@ -52,8 +52,9 @@ const BlogCard = () => {
                     <h2>Java is not the same as JavaScript</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
                     <p className="read-more">
-                        <a href="#" className='custom-btn btn-10'>Read More</a>
+                        <a href="#">Read More</a>
                     </p>
+
                 </div>
             </div>
         </div>
