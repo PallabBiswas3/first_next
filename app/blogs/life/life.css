@@ -152,10 +152,12 @@
         .read-more {
             text-align: right;
 
+
             a {
                 color: var(--color-prime);
                 display: inline-block;
                 position: relative;
+                text-decoration: none;
 
                 &:after {
                     content: "\f061";
