@@ -3,9 +3,11 @@ import image1 from '/public/image_space1.jpg';
 import image2 from '/public/image_space2.webp';
 import "./space.css";
 
+
 const BlogCard = () => {
     return (
-        <div>
+
+        <div className='body_life'>
             <div className="blog-card">
                 <div className="meta">
                     <Image src={image1} className='photo' />
@@ -57,6 +59,7 @@ const BlogCard = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 

@@ -21,7 +21,7 @@ body {
 
 .background {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .background-container {
@@ -58,7 +58,7 @@ body {
 
 .text-overlay {
   position: absolute;
-  top: 25%;
+  top: 45%;
   left: 85%;
   transform: translate(-50%, -50%);
   text-align: center;

@@ -3,9 +3,11 @@ import image1 from '/public/image_universe1.jpg';
 import image2 from '/public/image_universe2.jpg';
 import "./universe.css";
 
+
 const BlogCard = () => {
     return (
-        <div>
+
+        <div className='body_life'>
             <div className="blog-card">
                 <div className="meta">
                     <Image src={image1} className='photo' />
@@ -54,10 +56,10 @@ const BlogCard = () => {
                     <p className="read-more">
                         <a href="#">Read More</a>
                     </p>
-
                 </div>
             </div>
         </div>
+
     );
 };
 

@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import image1 from '/public/image_life1.jpg';
 import image2 from '/public/image_life2.jpg';
+
 import "./life.css";
 
 const BlogCard = () => {
     return (
-        <div>
+
+        <div className='body_life'>
             <div className="blog-card">
                 <div className="meta">
                     <Image src={image1} className='photo' />
@@ -57,6 +59,7 @@ const BlogCard = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 
