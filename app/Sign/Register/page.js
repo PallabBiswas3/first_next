@@ -1,87 +1,41 @@
-import { useState } from 'react';
+"use client"
 import "./register.css"
-
-function Page() {
-    const [formType, setFormType] = useState('signup');
-
-    const handleFormChange = (type) => {
-        setFormType(type);
+const RegisterForm = () => {
+    const handle2 = () => {
+        window.location.href = '/Sign/Login';
     };
-
     return (
-        <div className={`signup-page-container ${formType === 'signup' ? 'signup-form-open' : 'login-form-open'}`}>
-            <div className="signup__container signup-form">
-                <div className="container__child signup__thumbnail" style={{ backgroundImage: 'url(https://p.w3layouts.com/demos_new/template_demo/19-06-2017/assets-demo_Free/554297363/web/images/7.jpg)' }}>
-                    <div className="thumbnail__logo">
-                        <img src="http://192.168.1.6:8080/house-rent-management/owner_front_end/assets/img/logo.png" alt="" />
-                    </div>
-                    <div className="thumbnail__content text-center">
-                        <h1 className="heading--primary">Welcome to signup</h1>
-                        <h2 className="heading--secondary">Are you ready to join?</h2>
-                    </div>
-                    <div className="signup__overlay"></div>
-                </div>
-                <div className="container__child signup__form">
-                    <form action="#">
-                        <div className="form-group">
-                            <label htmlFor="username">Username</label>
-                            <input id="username" className="form-control" type="text" name="username" placeholder="" required />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input id="email" className="form-control" type="email" name="email" placeholder="" required />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input id="password" className="form-control" type="password" name="password" placeholder="" required />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="passwordRepeat">Repeat Password</label>
-                            <input id="passwordRepeat" className="form-control" type="password" name="passwordRepeat" placeholder="" required />
-                        </div>
-                        <div className="m-t-lg">
-                            <ul className="list-inline">
-                                <li><input className="btn btn--form" type="submit" value="Register" /></li>
-                                <li><a className="signup__link" href="#" onClick={() => handleFormChange('login')}>I am already a member</a></li>
-                            </ul>
-                        </div>
-                    </form>
+        <div className="container">
+            <div className="login">
+                <div className="container">
+                    <h1>Register</h1>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" /><br />
+                    <input type="checkbox" /><span>Remember me</span>
+                    <a href="#">Forgot password?</a>
+                    <button>log in</button>
+                    <hr /><p>Or Connect With</p><hr />
+                    <ul>
+                        <li><i className="fab fa-facebook-f fa-2x"></i></li>
+                        <li><i className="fab fa-twitter fa-2x"></i></li>
+                        <li><i className="fab fa-github fa-2x"></i></li>
+                        <li><i className="fab fa-linkedin-in fa-2x"></i></li>
+                    </ul>
+                    <div className="clearfix"></div>
+                    <span className="copyright">&copy;2019</span>
                 </div>
             </div>
-            <div className="login-container">
-                <div className="signup__container">
-                    <div className="container__child signup__form">
-                        <form action="#">
-                            <div className="form-group">
-                                <label htmlFor="email">Email</label>
-                                <input id="email" className="form-control" type="email" name="email" placeholder="" required />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="password">Password</label>
-                                <input id="password" className="form-control" type="password" name="password" placeholder="" required />
-                            </div>
-                            <div className="m-t-lg">
-                                <ul className="list-inline">
-                                    <li><input className="btn btn--form" type="submit" value="Login" /></li>
-                                    <li><a className="signup__link" href="#" onClick={() => handleFormChange('signup')}>Create a new member</a></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="container__child signup__thumbnail" style={{ backgroundImage: 'url(https://p.w3layouts.com/demos_new/template_demo/19-06-2017/assets-demo_Free/554297363/web/images/7.jpg)' }}>
-                        <div className="thumbnail__logo">
-                            <img src="http://192.168.1.6:8080/house-rent-management/owner_front_end/assets/img/logo.png" alt="" />
-                        </div>
-                        <div className="thumbnail__content text-center">
-                            <h1 className="heading--primary">Welcome to login</h1>
-                            <h2 className="heading--secondary">Are you ready to login?</h2>
-                        </div>
-                        <div className="signup__overlay"></div>
-                    </div>
+            <div className="register">
+                <div className="container">
+                    <i className="fas fa-user-plus fa-5x"></i>
+                    <h2>Hello, friend!</h2>
+                    <p>Enter your personal details and start journey with us</p>
+                    <h3>Already have account?</h3>
+                    <button><a href="/Sign/Login" onClick={handle2}>Login<i className="fas fa-arrow-circle-right"></i></a></button>
                 </div>
             </div>
         </div>
     );
 }
 
-export default Page;
+export default RegisterForm;

@@ -1,201 +1,177 @@
-body {
-    padding: 0;
+/*Start Global Style*/
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
 }
 
-.signup-page-container {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(85, 85, 85, 0.33), rgba(85, 85, 85, 0.33)), url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png) repeat;
-}
+body {
+    background: #e9ebee;
 
-.signup__container {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    transform: translateY(-50%);
-    overflow: hidden;
-    display: table;
-    align-items: center;
     justify-content: center;
-    width: 50rem;
-    height: 30rem;
-    border-radius: 0.1875rem;
-    box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
-}
-
-.signup-form {
-    z-index: 10;
-}
-
-.signup__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.59);
-}
-
-.container__child {
-    width: 50%;
-    height: 493px;
-    color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    transition: all ease .8s;
-}
-
-.signup__thumbnail {
-    position: relative;
-    padding: 2rem;
-    display: table-cell;
-    flex-wrap: wrap;
     align-items: center;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    vertical-align: middle;
-    top: 0;
-    transition: all ease .8s;
+    height: 100vh;
+    font-family: sans-serif;
 }
 
-.signup__thumbnail:hover {
-    transition: all ease .8s;
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    height: 100%
 }
 
-.thumbnail__logo {
-    align-self: flex-start;
-    position: absolute !important;
-    top: 15px;
+.login,
+.register {
+    width: 50%
 }
 
-.thumbnail__content {
-    align-self: center;
+/*Start Login Style*/
+.login {
+    float: left;
+    background-color: #fafafa;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 100px;
 }
 
-.heading--primary {
-    font-size: 1.999rem;
+.login h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
 }
 
-.heading--secondary {
-    font-size: 1.414rem;
-}
-
-.thumbnail__links {
-    align-self: flex-end;
+input[type="email"],
+input[type="password"] {
     width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
 }
 
-.thumbnail__links a {
-    font-size: 1rem;
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}
+
+.login span {
+    float: left
+}
+
+.login a {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+.login a:hover {
+    color: #9526a9;
+    font-weight: bold
+}
+
+.login button {
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: #9526a9;
     color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
 }
 
-.thumbnail__links a:hover,
-.thumbnail__links a:focus {
-    color: rgba(255, 255, 255, 0.5);
+.login button:hover {
+    width: 97%;
+    font-size: 22px;
+    border-radius: 5px;
+
 }
 
-.signup__form {
-    padding: 2.5rem;
-    background: #fafafa;
-    position: relative;
-    top: 0;
-    transition: all ease .8s;
+.login hr {
+    width: 30%;
+    display: inline-block
 }
 
-label {
-    font-size: .85rem;
-    text-transform: uppercase;
-    color: #555;
-    margin-bottom: 0;
+.login p {
+    display: inline-block;
+    margin: 0px 10px 30px;
 }
 
-.form-control {
+.login ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.login ul li {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.login ul li:hover {
+    opacity: 0.6
+}
+
+.login ul li:last-child {
+    margin-right: 0
+}
+
+.login .copyright {
+    display: inline-block;
+    float: none;
+}
+
+/*Start Register Style*/
+.register {
+    float: right;
+    background-image: linear-gradient(135deg, #23212f 5%, #9526a9 95%);
+    height: 100%;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.register h2 {
+    margin: 30px 0;
+    font-size: 50px;
+    letter-spacing: 3px
+}
+
+.register p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.register button {
     background-color: transparent;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 0;
-    padding-left: 0;
-}
-
-.form-control:active,
-.form-control:focus,
-.form-control:invalid {
-    outline: none !important;
-    box-shadow: none !important;
-    border-color: #DF6482;
-}
-
-.btn--form {
-    padding: .5rem 2.5rem;
-    font-size: .95rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
     color: #fff;
-    background: #DF6482;
-    border-radius: 2.1875rem;
-    transition: all ease .5s;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    margin-top: 1rem;
 }
 
-.btn--form:focus,
-.btn--form:hover {
-    background: transparent;
-    border-color: #DF6482;
-    color: #DF6482;
-    outline: none;
-    box-shadow: none;
+.register button a {
+    text-decoration: none;
+    color: white;
 }
 
-.signup__link {
-    font-size: .8rem;
-    font-weight: 600;
-    text-decoration: underline;
-    color: #999;
+.register button a:hover {
+    color: #9526a9;
+    background-color: #fff;
+    cursor: pointer;
 }
 
-.signup__link:focus,
-.signup__link:hover {
-    color: #787878;
-}
-
-.login-container {
-    z-index: 9;
-}
-
-.login-form-open .signup__thumbnail {
-    top: 493px;
-    transition: all ease .8s;
-}
-
-.login-form-open .signup__form {
-    top: -493px;
-    transition: all ease .8s;
-}
-
-.login-form-open .signup__container {
-    z-index: 11;
-}
-
-.login-form-open .signup__thumbnail {
-    top: 0;
-    z-index: 10;
-}
-
-.login-form-open .signup__form {
-    top: 0;
-    z-index: 10;
+.register button:hover {
+    color: #9526a9;
+    background-color: #fff;
+    cursor: pointer;
 }

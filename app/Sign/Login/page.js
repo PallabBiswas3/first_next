@@ -1,7 +1,7 @@
 "use client"
 import './login.css';
 
-export default function Login() {
+const login = () => {
     const handle1 = () => {
         window.location.href = '/Sign/register';
     };
@@ -22,8 +22,9 @@ export default function Login() {
                 <button type="submit">Sign In</button>
             </form>
             <div className="login-footer">
-                <p>Don't have an account? <a href="/Sign/register" onClick={handle1}>Register</a></p>
+                <p>Don't have an account? <a href="/Sign/Register" onClick={handle1}>Register</a></p>
             </div>
         </div>
     );
-} 
+}
+export default login;
