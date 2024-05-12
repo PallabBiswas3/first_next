@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Anaheim);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #000000, #0a1545);
+}
+
+h1 {
+    display: table;
+    margin: 2% auto 0;
+    text-transform: uppercase;
+    font-family: "Anaheim", sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    text-shadow: 0 1px white, 0 2px black;
+}
+
+.container {
+    margin: 7% auto;
+    margin-left: 37%;
+    width: 324px;
+    height: 200px;
+    position: absolute;
+    perspective: 1000px;
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+}
+
+#carousel:hover {
+    animation-play-state: paused;
+}
+
+#carousel figure {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 176px;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 2px black;
+}
+
+#carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(432px);
+}
+
+#carousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(432px);
+}
+
+.img {
+    filter: grayscale(1);
+    /* Standard syntax */
+    -webkit-filter: grayscale(1);
+    /* Safari and older Chrome */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.img:hover {
+    filter: grayscale(0);
+    /* Standard syntax */
+    -webkit-filter: grayscale(0);
+    /* Safari and older Chrome */
+    transform: scale(1.2);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotation1 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.buttonBack1 {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 0%;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(240, 127, 7);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttonBack1:hover {
+    transform: scale(1.1, 1.1);
+    background-color: purple;
+    color: white;
+}
+
+.buttonFoward1 {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 90%;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(240, 127, 7);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttonFoward1:hover {
+    transform: scale(1.1, 1.1);
+    background-color: purple;
+    color: white;
+}
