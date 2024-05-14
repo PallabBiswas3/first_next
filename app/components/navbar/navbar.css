@@ -33,3 +33,12 @@
     color: black;
     box-shadow: 0 0 10px white;
 }
+
+@media (max-width: 768px) {
+    .navbar ul li a {
+        margin: 5px;
+        padding: 5px;
+
+    }
+
+}

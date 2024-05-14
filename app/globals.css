@@ -291,7 +291,7 @@ button {
 
   .text-overlay {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 65%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -301,7 +301,7 @@ button {
 
   .text-overlay2 {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -320,6 +320,7 @@ button {
   .text-overlay2 {
     top: 50%;
     text-wrap: wrap;
+    font-size: 10px;
   }
 
   .me {
