@@ -26,7 +26,7 @@ const Navbar = () => {
                     <a href="/" className="navLinks" onClick={handle1}>Home</a>
                 </li>
                 <li>
-                    <a href="/Sign/Gallery" className="navLinks" onClick={handle2}>Gallery</a>
+                    <a href="/Gallery" className="navLinks" onClick={handle2}>Gallery</a>
                 </li>
 
                 <li>
