@@ -19,8 +19,7 @@ const Navbar = () => {
 
         <nav className="navbar">
 
-            <a href="#" className="logo">NSSC</a>
-            <input type="checkbox" id="chkToggle"></input>
+
             <ul className="mainNav" id="js-menu">
                 <li>
                     <a href="/" className="navLinks" onClick={handle1}>Home</a>
