@@ -1,26 +1,43 @@
-"use client"
-import Image from "next/image";
-import logo from "../../../public/logo.jpg";
+"use client";
+import React from "react";
+import "./navbar.css" // Import CSS module for styling
+
 const Navbar = () => {
     const handle1 = () => {
-        window.location.href = '/Sign/Register';
+        window.location.href = '/';
     };
     const handle2 = () => {
-        window.location.href = '/Sign/Login';
+        window.location.href = '/Sign/Gallery';
     };
     const handle3 = () => {
-        window.location.href = '/Gallery';
+        window.location.href = '/Sign/Login';
+    };
+    const handle4 = () => {
+        window.location.href = '/Sign/Register';
     };
     return (
-        <div className="navbar">
-            <Image src={logo} alt="logo" className="navbar-brand" />
-            <ul className="navbar-nav" id="navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/Gallery" onClick={handle3}>Gallery</a></li>
-                <li><a href="/Sign/Login" onClick={handle2}>Login</a></li>
-                <li><a href="/Sign/Register" onClick={handle1}>Register</a></li>
+
+        <nav className="navbar">
+
+            <a href="#" className="logo">NSSC</a>
+            <input type="checkbox" id="chkToggle"></input>
+            <ul className="mainNav" id="js-menu">
+                <li>
+                    <a href="/" className="navLinks" onClick={handle1}>Home</a>
+                </li>
+                <li>
+                    <a href="/Sign/Gallery" className="navLinks" onClick={handle2}>Gallery</a>
+                </li>
+
+                <li>
+                    <a href="/Sign/Login" className="navLinks" onClick={handle3}>Login</a>
+                </li>
+                <li>
+                    <a href="/Sign/Register" className="navLinks" onClick={handle4}>Register</a>
+                </li>
             </ul>
-        </div>
+        </nav>
     );
-};
+}
+
 export default Navbar;
