@@ -290,7 +290,23 @@ button {
   }
 
   .text-overlay {
-    top: 50%;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-overlay2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .text-overlay h1 {
