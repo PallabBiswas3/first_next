@@ -11,6 +11,8 @@ const BlogCard = () => {
             <div className="blog-card">
                 <div className="meta">
                     <Image src={image1} className='photo' />
+
+
                     <ul className="details">
                         <li className="author"><a href="#">John Doe</a></li>
                         <li className="date">Aug. 24, 2015</li>
@@ -23,6 +25,7 @@ const BlogCard = () => {
                             </ul>
                         </li>
                     </ul>
+
                 </div>
                 <div className="description">
                     <h1>Learning to Code</h1>

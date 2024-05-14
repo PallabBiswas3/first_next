@@ -208,7 +208,8 @@
 
         .meta {
             flex-basis: 40%;
-            height: auto;
+            height: 100px;
+            flex-direction: row;
         }
 
         .description {
