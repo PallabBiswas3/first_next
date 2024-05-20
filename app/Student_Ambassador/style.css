@@ -1,0 +1,261 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.pallab-spats-logo {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
+
+.pallab-nssc-logo {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
+
+.pallab-kgp-logo {
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 100px);
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
+
+.pallab-about {
+    animation: slideInFromLeft 1s ease-out;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 600px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(3, 5, 109, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.pallab-text {
+    color: white;
+    margin: 10px;
+    font-size: 100px;
+    top: 20%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+
+.pallab-why {
+    animation: slideInFromLeft 1s ease-out;
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.pallab-text2 {
+    color: white;
+    margin: 30px;
+    font-size: 120px;
+    top: 20%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pallab-galleryWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.pallab-gallery {
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+    background-color: black;
+}
+
+.pallab-gallery-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding: 10px;
+    flex: none;
+    background-color: black;
+}
+
+.pallab-gallery-row span {
+    position: relative;
+    background-color: black;
+}
+
+.pallab-gallery-row span img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.pallab-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.pallab-backBtn,
+.pallab-nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.pallab-gallery-row span img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.pallab-incentives {
+    animation: slideInFromLeft 1s ease-out;
+    position: absolute;
+    top: 275%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.pallab-incentives-gallery-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: black;
+}
+
+.incentive-box {
+    background-color: #030333;
+    /* Deep blue background */
+    box-shadow: 0 0 10px white;
+    /* White box-shadow */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.incentive-box img {
+    display: block;
+    margin: auto;
+}
+
+.incentive-box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.pallab-about-intern,
+.pallab-about-best,
+.pallab-about-goodie,
+.pallab-about-vip {
+    animation: slideInFromLeft 1s ease-out;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 600px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(3, 5, 109, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.pallab-responsibility {
+    animation: slideInFromLeft 1s ease-out;
+    position: absolute;
+    top: 370%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.pallab-responsibility-text {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.pallab-box {
+    color: white;
+    background-color: rgba(3, 5, 109, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    /* Adjust the min-width as needed */
+    max-width: 300px;
+    /* Adjust the max-width as needed */
+    box-sizing: border-box;
+}
+
+.pallab-box p {
+    margin: 0;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .pallab-text-overlay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pallab-kgp-logo,
+    .pallab-nssc-logo,
+    .pallab-spats-logo {
+        height: 100px;
+        width: auto;
+    }
+
+    .pallab-text {
+        font-size: 50px;
+    }
+
+    .pallab-about {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
