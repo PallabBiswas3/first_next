@@ -68,7 +68,7 @@ const Studentpage = () => {
                 <Image src={image2} alt="spats_logo" className="pallab-spats-logo" />
             </div>
 
-            <div className="pallab-about">
+            <div className="pallab-about good">
                 <h1 className="pallab-text">NSSC</h1>
                 <p>
                     The National Students' Space Challenge (NSSC) is the centrepiece of spAts.
