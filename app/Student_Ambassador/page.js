@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import image1 from "/public/images_student/nssc.jpg";
 import image2 from "/public/images_student/logo-spats-dark.jpg";
 import image3 from "/public/images_student/kgplogo.png";
-import background_image from "/public/images_student/background1.jpg";
+
 import back from "/public/images_student/back.png";
 import next from "/public/images_student/next.png";
 import communication from "/public/images_student/communication.jpeg";
