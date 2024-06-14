@@ -1,8 +1,8 @@
 "use client"
 import "./style.css";
 import React, { useEffect } from 'react';
-import image1 from "/public/images_student/dr v narayan.jpeg";
-import image2 from "/public/images_student/fiery1.png";
+import image1 from "/public/dr v narayan.jpeg";
+import image2 from "/public/fiery.jpg";
 import Image from "next/image";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 const GuestDetail = () => {
